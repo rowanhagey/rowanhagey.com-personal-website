@@ -1,0 +1,276 @@
+/* CSS STYLE FINALLLLY */
+
+/* Set the default font, line height, background color, 
+and text color for the entire page */
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body img {
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto; /* Add margin above and below the image */
+}
+
+/* Remove the underline from links and set the default link color */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Change the color of links when hovered over */
+a:hover {
+    color: #007BFF;
+}
+
+/* Header Styles */
+
+/* Style the header with a background color and padding */
+header {
+    background: #333;
+    color: #f4f4f4;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+/* Remove the default list style and center the navigation links */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Add margin between navigation links */
+header nav ul li {
+    margin: 0 15px;
+}
+
+/* Style the navigation links with uppercase text and bold font */
+header nav ul li a {
+    color: #828385;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: monospace, serif;
+}
+
+/* Main Content Styles */
+
+/* Add padding to the main content area */
+main {
+    padding: 0px;
+}
+
+/* Center the text and image in the introduction section and add padding */
+#introduction {
+    text-align: center;
+    padding: 0px;
+}
+
+/* Style for the welcome message section */
+#welcome-message {
+    font-size: 50px;
+    font-family: New Century Schoolbook, serif;
+    margin-bottom: 0px; /* Add space below the welcome message */
+}
+
+/* Style for the image inside the introduction section */
+#introduction img {
+    width: 750px;
+    height: 750px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto; /* Add margin above and below the image */
+}
+
+/* Style for the introduction paragraph container */
+#introduction-paragraph {
+    text-align: center; /* Center the text */
+    padding: 0 20px; /* Add horizontal padding around the text */
+    margin: 20px auto;
+}
+
+/* Style for the paragraph inside the introduction */
+#introduction-paragraph p {
+    font-size: 1.5em; /* Increase the font size */
+    line-height: 1.6; /* Adjust line height for better readability */
+    max-width: 800px; /* Set a maximum width to keep the text readable */
+    margin: 0 auto; /* Center the paragraph within the container */
+    color: #333; /* Adjust the text color if necessary */
+    margin: 10px, 0; /* Add space below the paragraph */
+    margin-top: 30px;
+}
+
+
+/* Center the highlights heading and add margin */
+#highlight-heading {
+    text-align: center;
+    font-family: New Century Schoolbook, serif;
+    font-size: 30px;
+    margin: 20px, 0;
+    padding: 10px 0; /* Add padding to the heading */
+}
+
+/* Use grid layout for the highlight reel container */
+#highlight-reel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create two columns */
+    gap: 2em; /* Adjust the gap between boxes */
+    justify-content: center;
+    align-items: stretch; /* Align items to the start to keep vertical spacing consistent */
+    padding: 2em; /* Add padding to the container */
+    max-width: 1000px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Style each highlight section with a background color, padding, 
+rounded corners, and a box shadow */
+.highlight {
+    background: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto; /* Remove fixed height to allow flexible sizing */
+    margin: 0; /* Remove margin to use the grid gap instead */
+    width: 100%; /* Ensure the highlight boxes take full width of the grid cell */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Ensure the images in the highlights scale properly and have rounded corners */
+.highlight img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Style the links in the highlights as buttons */
+.highlight a {
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 3em;
+    line-height: normal; /* Reset line-height */
+}
+
+/* Add margin to the headings */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 10px 0;
+    font-family: New Century Schoolbook, serif;
+}
+
+/* Footer Styles */
+
+/* Style the footer with a background color, text color, and padding */
+footer {
+    background: #333;
+    color: #828385;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Style the links in the footer */
+footer a {
+    color: #828385;
+}
+
+/* Add margin to the paragraphs in the footer */
+footer p {
+    margin: 5px 0;
+}
+
+.SectionHeading {
+    text-align: center;
+    font-family: New Century Schoolbook, serif;
+    font-size: 30px;
+    margin: 20px, 0;
+    padding: 10px 0;
+}
+
+.passions-page {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.passions-page .text {
+    text-align: center;
+    margin: 0 200px;
+}
+
+.me-page {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.me-page .text {
+    text-align: center;
+    margin: 0 200px;
+}
+
+.work-page {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.work-page ul {
+    list-style: none;
+}
+
+.work-page .text {
+    text-align: center;
+    margin: 0 200px;
+}
+
+.resize-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Add some space between the images */
+}
+
+.resize-image img {
+    max-width: 50%;
+    height: auto; /* Ensure the images maintain their aspect ratio */
+}
+
+.resize-image .large-image {
+    width: 50%;
+    height: auto;
+}
+
+.resize-image .small-image {
+    width: 35%; /* Image takes 50% width of the container */
+    height: auto;
+}
+
+.people-page {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.people-page .text {
+    text-align: center;
+    margin: 0 200px;
+}
