@@ -312,5 +312,27 @@ document.addEventListener('DOMContentLoaded', () => {
     if (pageClassList.contains('gallery-page')) {
         console.log("Gallery page script running");
         // Add Gallery-specific JS here
+        // Enable tap to toggle active class for gallery items
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                // Prevent click bubbling if necessary (optional)
+                e.stopPropagation();
+
+                // Close other active items
+                document.querySelectorAll('.gallery-item.active').forEach(i => {
+                    if (i !== item) i.classList.remove('active');
+                });
+
+                // Toggle this one
+                item.classList.toggle('active');
+            });
+        });
+
+        // Optional: tap outside gallery-item to close all
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.gallery-item')) {
+                document.querySelectorAll('.gallery-item.active').forEach(i => i.classList.remove('active'));
+            }
+        });
     }
 });
