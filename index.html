@@ -1,91 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hey I'm Rowan</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rowan Hagey</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-    
+<body id="top" class="index-page">
+    <!-- Navigation Bar -->
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <ul class="nav-list">
                 <li><a href="index.html">Rowan Hagey</a></li>
                 <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="codingprojects.html">My Work</a></li>
-                <li><a href="passions.html">Passions</a></li>
-                <li><a href="mypeople.html">My People</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
-
-    <main>
-        <section id="introduction">
-            <section id="welcome-message">
-                <h1>Hey, I'm Rowan.</h1>
-                <h1>Welcome to my personal website!</h1>
-            </section>
-            <img src="images/intro.JPG" alt="Introduction Picture">
-            <section id="introduction-paragraph">
-                    <p>
-                        My name's Rowan Thomas Hagey, and this is my first 
-                        personal coding project. 
-                        Think of this as an extended informal resume. 
-                        Feel free to look around and get to know me!
-                    </p>
+    <!-- Main Page Content Wrapper -->
+    <div class="homepage-content">
+    <!-- Introduction Section -->
+        <main>
+            <section class="intro-section">
+                <img src="images/home/IntroPercyJackson.jpg" alt="Rowan Hagey" class="intro-photo" />
+                <div class="intro-text">
+                    <h1>Hey, Hi, Welcome <span class="wave" id="wave-emoji">👋</span> </h1>
+                    <p>I’m Rowan, a senior at the University of Michigan studying Computer Science with a minor in Mathematics. Currently, I’m searching for full-time opportunities in the tech sector where I can help build tools that make life easier, more enjoyable, and integrate fully with the way our world is evolving. Take a look around to get to know me both in and out of my work.</p>
                 </div>
             </section>
-        </section>
+            <!-- Highlight Cards Section -->
+            <section class="highlight-section">
+                <div class="highlight-card" id="about-card">
+                    <h3>About Me</h3>
+                    <img src="images/home/aboutme.jpg" alt="About Me" />
+                    <a id="about-link" href="aboutme.html">Learn More</a>
+                </div>
+                <div class="highlight-card" id="projects-card">
+                    <h3>Projects</h3>
+                    <img src="images/home/projects.png" alt="Projects" />
+                    <a id="projects-link" href="projects.html">See Work</a>
+                </div>
+                <div class="highlight-card" id="vision-card">
+                    <h3>Vision</h3>
+                    <img src="images/home/vision.jpg" alt="Vision" />
+                    <a id="vision-link" href="vision.html">The Future</a>
+                </div>
+                <div class="highlight-card" id="gallery-card">
+                    <h3>Gallery</h3>
+                    <img src="images/home/gallery.jpg" alt="Gallery" />
+                    <a id="gallery-link" href="gallery.html">Enter Here</a>
+                </div>
+            </section>
+        </main>
+    </div>
 
-        <h2 id="highlight-heading">Highlights</h2>
-        <section id="highlight-reel">
-            <div class="highlight">
-                <h3>About Me</h3>
-                <img src="images/aboutme.jpg" alt="About Me">
-                <p>Learn more about who I am, where I come from, and what drives me. 
-                    Dive into my background, education, and aspirations to understand 
-                    my journey and future goals.</p>
-                <a href="aboutme.html">Learn About Me</a>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p><a href="#top">Back to top</a></p>
             </div>
-            <div class="highlight">
-                <h3>My Work</h3>
-                <img src="images/codingprojects.jpg" alt="Computer Science Experience">
-                <p>Check out my latest and greatest coding projects. From small scripts 
-                    to full-fledged applications, explore work that showcases 
-                    my skills, history, and aspirations in computer science.</p>
-                <a href="codingprojects.html">Computer Science Experience</a>
+            <div class="footer-center">
+                <div class="social-row">
+                    <a href="mailto:rowan.hagey2004@gmail.com" class="icon-link" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icons/email.webp" alt="Email"/></a>
+                    <a href="https://www.linkedin.com/in/rowanhagey" class="icon-link" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icons/linkedIn.png" alt="LinkedIn"/></a>
+                    <a href="https://www.instagram.com/rowanhagey/" class="icon-link" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icons/instagram.png" alt="Instagram"/></a>
+                    <a href="https://github.com/rowanhagey" class="icon-link" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icons/github.webp" alt="Github"/></a>
+                </div>
             </div>
-            <div class="highlight">
-                <h3>My People</h3>
-                <img src="images/mypeople.jpg" alt="My People">
-                <p>Meet the important people in my life. 
-                    From family to friends, see the faces of the people 
-                    that make me me.</p>
-                <a href="mypeople.html">Meet My People</a>
+            <div class="footer-right">
+                <p>&copy; 2025 Rowan Thomas Hagey</p>
             </div>
-            <div class="highlight">
-                <h3>Passions</h3>
-                <img src="images/passions.jpg" alt="Passions">
-                <p>Discover my hobbies and interests. 
-                    From coding to travel to film, explore the things I love and the activities 
-                    that keep me inspired and motivated.</p>
-                <a href="passions.html">Explore My Passions</a>
-            </div>
-        </section>
-
-    </main>
-
-    <footer id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:rowanhagey.contact@gmail.com">
-            rowanhagey.contact@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/rowan-hagey" target="_blank">
-            linkedin.com/in/rowan-hagey</a></p>
-
-        <p><a href="#top">Back to top</a></p>
-        <p>&copy; 2024 Rowan Hagey</p>
+        </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
